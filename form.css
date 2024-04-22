@@ -1,0 +1,111 @@
+
+@font-face {
+    font-family: mermaid;
+    src: url("Little-Mermaid-por-Kustren.ttf")
+  }
+
+body{
+    background-image: url(backwide-min.jpg);
+    color:white;
+}
+#middle{
+    border:2px solid green;
+    height: 800px;;
+    width:0;
+    margin:auto;
+    margin-top: 100;
+}
+#title{
+    font-family:mermaid;
+    font-size:60px;
+    margin:50px auto;
+    width:45%;
+    text-align: center;
+
+}
+
+#info{
+    font-family:mermaid;
+    margin:25px auto;
+    font-size:24px;
+    width: 50%;
+    line-height: 1.75;
+    text-align: center;
+}
+#place{
+    font-size:1.25em;
+}
+
+#addresses{
+    font-size:.95em;
+}
+
+#info a:link{
+    color:white;
+    text-decoration: none;
+}
+
+#info a:visited{
+    color:white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px){
+    body{
+        background-image: url(back1024-min.jpg);
+    }
+    #title{
+        font-family:mermaid;
+        font-size:60px;
+        margin:50px auto;
+        width:55%;
+        text-align: center;
+        line-height: 1.23;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #title{
+        font-family:mermaid;
+        font-size:48px;
+        margin:50px auto;
+        width:55%;
+        text-align: center;
+        line-height: 1.23;
+    }
+}
+
+@media screen and (max-width: 450px){
+    body{
+        background-image: url(back450-min.jpg);
+    }
+    #title{
+        width:100%;
+    }
+    
+    #info{
+        font-family:mermaid;
+        margin:65px auto;
+        font-size:24px;
+        width: 100%;
+        line-height: 1.85;
+        text-align: center;
+    }
+    #place{
+        font-size:1.25em;
+    }
+    
+    #addresses{
+        font-size:.95em;
+    }
+    #date-time{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #title{
+        width:100%;
+        font-size: 42px;
+    }
+}
