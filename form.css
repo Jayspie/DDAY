@@ -1,27 +1,26 @@
-
+*{
+  margin: 0;
+  padding: 0;
+}
 @font-face {
     font-family: mermaid;
-    src: url("Little-Mermaid-por-Kustren.ttf")
+    src: url("assests/Little-Mermaid-por-Kustren.ttf")
   }
-
 body{
-    background-image: url(backwide-min.jpg);
-    color:white;
-}
-#middle{
-    border:2px solid green;
-    height: 800px;;
-    width:0;
-    margin:auto;
-    margin-top: 100;
+  color:white;
+  background-size: cover;
+  background-image: url(assests/backwide-min.jpg);
+  height: 100vh;
+  background-position: 50%;
+  background-attachment: fixed;
+
 }
 #title{
-    font-family:mermaid;
-    font-size:60px;
-    margin:50px auto;
-    width:45%;
-    text-align: center;
-
+  text-align: center;
+  font-family:mermaid;
+  font-size:60px;
+  margin:50px auto;
+  width:35%;
 }
 
 #info{
@@ -52,7 +51,7 @@ body{
 
 @media screen and (max-width: 1024px){
     body{
-        background-image: url(back1024-min.jpg);
+        background-image: url(assests/back1024-min.jpg);
     }
     #title{
         font-family:mermaid;
@@ -76,31 +75,190 @@ body{
 }
 
 @media screen and (max-width: 450px){
-    body{
-        background-image: url(back450-min.jpg);
+#title{
+
+width:100%;
+}
+
+#info{
+font-family:mermaid;
+margin:65px auto;
+font-size:24px;
+width: 100%;
+line-height: 1.85;
+text-align: center;
+}
+#place{
+font-size:1.25em;
+}
+
+#addresses{
+font-size:.95em;
+
+}
+#date-time{
+font-size: 1.2em;
+
+}
+
+.openbtn {
+font-size: 48px;
+background-color:transparent;
+color: white;
+margin-left:85%;
+}
+
+  .sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #2596be;
+  overflow-x: hidden; /* Disable horizotal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+    .sidebar a {
+    text-decoration: none;
+    font-size: 24px;
+    text-align: left;
+    color: #f6ffff;
+    display: block;
+    transition: 0.3s;
+    width:50%;
+    font-family:mermaid;
     }
-    #title{
-        width:100%;
+
+  .navbar{
+  margin-bottom: 70%;
+  margin-left: 10%;
+  } 
+    .sidebar button {
+    border:none;
+    background-color:transparent;
+    padding-bottom: 50px;
+    padding-left: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    font-family:mermaid;
+    text-align: left;
+    color: #f6ffff;
+    display: block;
+    transition: 0.3s;
+    width: 85%;
+    height:10px;
+    margin-top:-100px;
+    margin-bottom:125px;
     }
-    
-    #info{
-        font-family:mermaid;
-        margin:65px auto;
-        font-size:24px;
-        width: 100%;
-        line-height: 1.85;
+
+    .sidebar button:hover{
+    color: #5ee4f9; 
+    }
+
+    .sidebar a:hover {
+    color: #5ee4f9;
+    }
+
+    .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    width: 10px;
+    height: 0px;
+    display:block;
+    }
+
+
+
+
+
+      .overlay {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #2596be;
+      opacity: 0.96;
+      z-index: 2;
+      cursor: pointer;
+      font-family: mermaid;
+      overflow-y: scroll;
+      }
+
+        #Contact h1{
+        font-size: 48px;
+        margin:50px auto;
         text-align: center;
-    }
-    #place{
-        font-size:1.25em;
-    }
-    
-    #addresses{
-        font-size:.95em;
-    }
-    #date-time{
-        font-size: 1.2em;
-    }
+        width: 50%;
+        }
+
+        #Contact h2{
+        font-size: 24px;
+        margin:auto;
+        width: 65%;
+        text-align: center;
+        text-decoration: none;
+        }
+        #contact h2:link{
+        color:white;
+        text-decoration: none;
+        }
+        #contact h2:link{
+        color:white;
+        text-decoration: none;
+        }
+
+        #Contact p{
+        font-size: 24px;
+        text-align: center;
+        margin:50px auto;
+        width: 75%;
+        }
+
+        .Wish-titles{
+        font-size: 48px;
+        margin:50px auto;
+        text-align: center;
+        width: 50%;
+        }
+
+        .Wish-ul{
+        width:65%;
+        text-align: center;
+        margin:95px auto;
+        list-style: none;
+        }
+
+        #Wishlist button{
+        border:none;
+        background-color:transparent;
+        font-size: 30px;
+        font-family:mermaid;
+        color: #f6ffff;
+        margin: 35px auto;
+        }
+
+        .Wish-context{
+        font-size: 24px;
+        margin-bottom: 50px;
+        }
+
+        #mini{
+        list-style: none;
+        margin-top:20px;
+        }
+        #mini li{
+        font-size:20px;
+        margin-bottom:15px;
+        }
 }
 
 @media screen and (max-width: 320px){
