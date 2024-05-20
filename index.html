@@ -1,110 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="form.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&display=swap" rel="stylesheet">
-    <title>Denise Birthday</title>
-  </head>
-  <body>
-    <div class="background">
-      <div id="mySidenav" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#" class="navbar" onclick="document.getElementById('Contact').style.display='block'">Contact</a>
-        <a href="#" class="navbar"  onclick="document.getElementById('Wishlist').style.display='block'">Wishlist</a>
-        <a href="https://forms.gle/zPFAWY1uUx14WuQH8" class="navbar"  target="_blank">Rsvp</a>
-        <a href="https://online.access.thegravityapp.io/company/1/venue/29/waiver/waiver-online" class="navbar"  target="_blank" >Waiver</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&display=swap" rel="stylesheet">
+  <title>Denise Birthday</title>
+</head>
+
+<body>
+  <div id="dad">
+    <div id="mySidenav" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#" class="navbar" onclick="document.getElementById('Contact').style.display='block'">Contact</a>
+      <a href="#" class="navbar" onclick="document.getElementById('Wishlist').style.display='block'">Wishlist</a>
+      <a href="https://forms.gle/zPFAWY1uUx14WuQH8" class="navbar" target="_blank">Rsvp</a>
+      <a href="https://online.access.thegravityapp.io/company/1/venue/29/waiver/waiver-online" class="navbar"
+        target="_blank">Waiver</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span class="openbtn" onclick="openNav()">&#9776;</span>
+
+    <div class="overlay" id="Contact" onclick="document.getElementById('Contact').style.display='none'">
+      <div>
+        <h1>Contact</h1>
+        <h2>Tiffany Prophet:<br><br> 832-769-6843</h2>
+        <p>Have any questions or concerns feel free to call or text</p>
       </div>
-      
-      <!-- Use any element to open the sidenav -->
-      <span class="openbtn" onclick="openNav()">&#9776;</span>
+    </div>
 
-              <div class="overlay" id="Contact" onclick="document.getElementById('Contact').style.display='none'">
-                <div>
-                    <h1>Contact</h1>
-                    <h2>Tiffany Prophet:<br><br> 832-769-6843</h2>
-                    <p>Have any questions or concerns feel free to call or text</p>
-                </div>
-              </div>
+    <div class="overlay" id="Wishlist" onclick="document.getElementById('Wishlist').style.display='none'">
+      <div class="Wish">
+        <h1 class="Wish-titles">Wishlist</h1>
+        <ul class="Wish-ul">
+          <li><button onclick="document.getElementById('Toys').style.display='block'">Toys</button></li>
+          <li><button onclick="document.getElementById('Clothes').style.display='block'">Clothes</button></li>
+          <li><button onclick="document.getElementById('Favorite_shows').style.display='block'">Favorite
+              character</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="overlay" id="Toys" onclick="document.getElementById('Toys').style.display='none'">
+      <div class="Toys">
+        <h1 class="Wish-titles">Toys</h1>
+        <ul class="Wish-ul">
+          <li class="Wish-context">Pk-K Puzzles</li>
+          <li class="Wish-context">Pk-K Educational Toys</li>
+          <li class="Wish-context">Books</li>
+          <li class="Wish-context">Disney Princess Dresses/accessories</li>
+          <li class="Wish-context">Dress up clothes/accessories</li>
+          <li class="Wish-context">Play-Doh</li>
+        </ul>
+      </div>
+    </div>
 
-              <div class="overlay" id="Wishlist" onclick="document.getElementById('Wishlist').style.display='none'">
-                <div class="Wish">
-                    <h1 class="Wish-titles">Wishlist</h1>
-                    <ul class="Wish-ul">
-                        <li><button onclick="document.getElementById('Toys').style.display='block'">Toys</button></li>
-                        <li><button onclick="document.getElementById('Clothes').style.display='block'">Clothes</button></li>
-                        <li><button onclick="document.getElementById('Favorite_shows').style.display='block'">Favorite character</button></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="overlay" id="Toys" onclick="document.getElementById('Toys').style.display='none'">
-                <div class="Toys">
-                    <h1 class="Wish-titles">Toys</h1>
-                <ul class="Wish-ul">
-                    <li class="Wish-context">Pk-K Puzzles</li>
-                    <li class="Wish-context">Pk-K Educational Toys</li>
-                    <li class="Wish-context">Books</li>
-                    <li class="Wish-context">Disney Princess Dresses/accessories</li>
-                    <li class="Wish-context">Dress up clothes/accessories</li>
-                </ul>
-                </div>
-          </div>
+    <div class="overlay" id="Clothes" onclick="document.getElementById('Clothes').style.display='none'">
+      <div>
+        <h1 class="Wish-titles">Clothes</h1>
+        <ul class="Wish-ul">
+          <li class="Wish-context">Shirts/Pants:<br><br>4T</li>
+          <li class="Wish-context">Shoes:<br><br>Toddler 7.5 or 8</li>
+        </ul>
+      </div>
+    </div>
 
-          <div class="overlay" id="Clothes" onclick="document.getElementById('Clothes').style.display='none'">
-            <div>
-                <h1 class="Wish-titles" >Clothes</h1>
-            <ul class="Wish-ul">
-               <li class="Wish-context">Shirts/Pants:<br><br>4T</li>
-               <li class="Wish-context">Shoes:<br><br>Toddler 7.5 or 8</li>
+    <div class="overlay" id="Favorite_shows" onclick="document.getElementById('Favorite_shows').style.display='none'">
+      <div>
+        <h1 class="Wish-titles">Favorite character</h1>
+        <ul class="Wish-ul">
+          <li class="Wish-context">Bluey</li>
+          <li class="Wish-context">Blues Clues</li>
+          <li class="Wish-context">Mickey Mouse<br>&<br>Friends</li>
+          <li class="Wish-context">Paw Patrol
+            <ul id="mini">
+              <li>Skye</li>
+              <li>Rocky</li>
             </ul>
-            </div>
-            </div>
-
-            <div class="overlay" id="Favorite_shows" onclick="document.getElementById('Favorite_shows').style.display='none'">
-                <div>
-                    <h1 class="Wish-titles" >Favorite character</h1>
-                <ul class="Wish-ul">
-                   <li class="Wish-context">Bluey</li>
-                   <li class="Wish-context">Blues Clues</li>
-                   <li class="Wish-context">Mickey Mouse<br>&<br>Friends</li>
-                   <li class="Wish-context">Paw Patrol
-                    <ul id="mini">
-                      <li>Skye</li>
-                      <li>Rocky</li>
-                    </ul>
-                   </li>
-                   <li class="Wish-context">Disney Princess
-                    <ul id="mini">
-                      <li>Moana</li>
-                      <li>Tiana</li>
-                      <li>Elsa</li>
-                      <li>Ariel</li>
-                    </ul>
-                   </li>
-                </ul>
-            </div>
-            </div>
-      <div class="text">
-        <h1 id="title" >Denise Mermaid <br>Party</h1>
-        <div id="info">
-          <a href="https://houstonwillowbrook.kidsempire.com/" target="_blank"><h3 id="place">Kids Empire</h3></a>
-          <a href="https://www.google.com/maps/place/Kids+Empire+Houston+Willowbrook/@29.9532522,-95.5464212,17z/data=!4m15!1m8!3m7!1s0x8640cde107a8f7b1:0x86b992b58a6eeee4!2s17355+Tomball+Pkwy,+Houston,+TX+77064!3b1!8m2!3d29.9532476!4d-95.5438463!16s%2Fg%2F11bw4qwhrv!3m5!1s0x8640cdcf5c0f4583:0x78a3a72448a3c6b4!8m2!3d29.9537198!4d-95.5446238!16s%2Fg%2F11qglpy8gc?entry=ttu" target="_blank"><h3 id="addresses">17355 Tomball Pkwy, Houston, TX 77064</h3></a>
-          <h2 id="date-time">June 29,2024<br>2pm-5pm</h2>
-          <a href="https://forms.gle/zPFAWY1uUx14WuQH8" target="_blank" id="rsvp"><h2>Rsvp</h2></a>
-        </div>
+          </li>
+          <li class="Wish-context">Disney Princess
+            <ul id="mini">
+              <li>Moana</li>
+              <li>Tiana</li>
+              <li>Elsa</li>
+              <li>Ariel</li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </div> 
+    </div>
+  </div>
+  <div class="text">
+    <h1 id="title">Denise Mermaid <br>Party</h1>
+    <div id="info">
+      <a href="https://houstonwillowbrook.kidsempire.com/" target="_blank">
+        <h3 id="place">Kids Empire</h3>
+      </a>
+      <a href="https://www.google.com/maps/place/Kids+Empire+Houston+Willowbrook/@29.9532522,-95.5464212,17z/data=!4m15!1m8!3m7!1s0x8640cde107a8f7b1:0x86b992b58a6eeee4!2s17355+Tomball+Pkwy,+Houston,+TX+77064!3b1!8m2!3d29.9532476!4d-95.5438463!16s%2Fg%2F11bw4qwhrv!3m5!1s0x8640cdcf5c0f4583:0x78a3a72448a3c6b4!8m2!3d29.9537198!4d-95.5446238!16s%2Fg%2F11qglpy8gc?entry=ttu"
+        target="_blank">
+        <h3 id="addresses">17355 Tomball Pkwy, Houston, TX 77064</h3>
+      </a>
+      <h2 id="date-time">June 29,2024<br>2pm-5pm</h2>
+      <a href="https://forms.gle/zPFAWY1uUx14WuQH8" target="_blank" id="rsvp">
+        <h2>Rsvp</h2>
+      </a>
+    </div>
+  </div>
+  </div>
 
-  </body>
-  <script>
+</body>
+<script>
   function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-}
-  </script>
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+  if (document.documentElement.clientWidth > 768) {
+    document.getElementById('dad').style.display='none';
+    console.log(document.documentElement.clientWidth)
+  } else if (document.documentElement.clientWidth<=768){
+    document.getElementById('dad').style.display = 'block';
+    console.log(document.documentElement.clientWidth)
+  }
+</script>
+
 </html>
