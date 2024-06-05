@@ -48,7 +48,9 @@ body{
     color:white;
     text-decoration: none;
 }
-
+#deadline{
+  margin-top:3%
+}
 @media screen and (max-width: 1024px){
 
     #title{
